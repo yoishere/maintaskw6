@@ -1,8 +1,25 @@
+// main.scss 統一管理 scss 檔
+
 @import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
+
+// utils 內輔助管理 or 產生樣式的檔案
+@import "./utils/variables";
+@import "./helper/mixin";
+
+// 第三方套件(bootstrap)
 @import "../../node_modules/bootstrap";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// base
+@import "./base/base.scss";
+@import "./base/fontStyle.scss";
 
-@import './pages/index.scss';
+// layout- 每一頁都需使用到的大型元件ex:header、footer、sidebar
+@import "./layout/container.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+// components(未連結)- 資料夾存放網站某些較小可重複使用的元件ex:buttons/carousel/cover/dropdown
+//@import "components/buttons";
+
+// pages
+@import "./pages/index.scss";
