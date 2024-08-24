@@ -6,17 +6,14 @@
 
 img {
   max-width: 100%;
+  //代表img會在自己原本的高度下去稱滿寬，但如果版面太大，圖片本身太小，就只會呈現圖片本身大小。
+  //所以硬要撐大，可以在html的img class中，放w-100
   height: auto;
   vertical-align: middle;
 }
 
-body {
-  font-family: "Lato", sans-serif;
-  line-height: 1.5;
-}
-
 a {
-  text-decoration: none;
+  //variables可設定，所以拿掉text-decoration: none;
   color: inherit;
   display: inline-block;
 }
@@ -31,17 +28,21 @@ code {
   color: $success;
 }
 
+//這邊已於variable的$paragraph-margin-bottom跟$headings-margin-bottom設定
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0;
+  letter-spacing: 0.1em;
+  // margin-bottom: 0;
 }
 
 p {
-  margin-bottom: 0;
+  letter-spacing: 0.05em;
+  //用em 不是rem，因為是要對照p的大小，去加成，所以用em
+  // margin-bottom: 0;
 }
 
 .material-symbols-outlined {

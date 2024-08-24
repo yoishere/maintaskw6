@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 48px 12px 0;
   @include mobile {
+    max-width: 100%;
     padding: 27px 12px 24px;
   }
 }
