@@ -318,7 +318,7 @@ $Neutral-400: #6c757d;
 $Neutral-500: #343a40;
 $Neutral-600: #212529;
 
-$success: #2cc585;
+$success: $Accent-200;
 $info: #4a72ff;
 $warning: #ffb054;
 $danger: #d65f5f;
@@ -349,7 +349,7 @@ $theme-colors: (
   "Neutral-400": $Neutral-400,
   "Neutral-500": $Neutral-500,
   "Neutral-600": $Neutral-600,
-  "success": $success,
+  "success": $Accent-200,
   "info": $info,
   "warning": $warning,
   "danger": $danger,
@@ -463,13 +463,14 @@ $spacers: (
   9: $spacer * 2.5,
   10: $spacer * 2.75,
   11: $spacer * 3,
-  12: $spacer * 5,
+  12: $spacer * 3.25,
+  13: $spacer * 5,
 
   // 1: $spacer * 0.25,
   // 2: $spacer * 0.5,
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -921,7 +922,7 @@ $btn-link-focus-shadow-rgb: to-rgb(
 ) !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius: $boder-radius-pillm !default;
+$btn-border-radius: $border-radius-pill !default;
 // $btn-border-radius: var(--#{$prefix}border-radius) !default;
 $btn-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $btn-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;

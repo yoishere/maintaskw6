@@ -1,3 +1,26 @@
+// 熱門主題
+.rounded-custom {
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+// 精選文章
+.card-width-bottom {
+  width: 404px;
+  height: 432px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid $Neutral-500;
+}
+
+.vip-btn {
+  font-size: $h6-font-size;
+  color: $primary-400;
+  background-color: $primary-300;
+  border: 0;
+  border-radius: 4px;
+}
 /***全部***/
 
 .banner {
