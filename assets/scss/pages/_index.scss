@@ -14,15 +14,30 @@
   border-bottom: 1px solid $Neutral-500;
 }
 
-.vip-btn {
+// 大家都在看
+.everyone-map {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 82px;
+  background-color: $Accent-100;
+  list-style-position: inside;
+  border-radius: 12px;
+}
+/***全部***/
+
+.hashtag-btn {
   font-size: $h6-font-size;
   color: $primary-400;
   background-color: $primary-300;
   border: 0;
   border-radius: 4px;
 }
-/***全部***/
-
+.more {
+  font-size: 20px;
+  text-decoration: none;
+  color: $success;
+}
 .banner {
   height: calc(100vh - 80px);
 }
