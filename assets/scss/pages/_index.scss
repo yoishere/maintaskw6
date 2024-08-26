@@ -47,6 +47,10 @@
   border-right: none;
   border-bottom: 1px solid $Neutral-500;
 }
+// 母親節強檔活動
+.bg-primary-200 {
+  background: $primary-200;
+}
 
 // 大家都在看
 .everyone-map {
@@ -58,6 +62,7 @@
   list-style-position: inside;
   border-radius: 12px;
 }
+
 /***全部***/
 
 .hashtag-btn {
