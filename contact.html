@@ -5,24 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>contact</title>
-    <script type="module" crossorigin src="/maintaskw6/assets/main-f2d85650.js"></script>
-    <link rel="stylesheet" href="/maintaskw6/assets/main-dd1fb614.css">
+    <script type="module" crossorigin src="/maintaskw6/assets/main-684f9045.js"></script>
+    <link rel="stylesheet" href="/maintaskw6/assets/main-f621f90a.css">
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand">Navbar</a>
-    <form class="d-flex" role="search">
-      <input
-        class="form-control me-2"
-        type="search"
-        placeholder="Search"
-        aria-label="Search"
-      />
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+    <!-- 要記得把這邊的header進行fixed -->
+<header class="bg-body">
+  <div class="header-container">
+    <div class="d-flex justify-content-between py-8 bottom-line">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand m-0 p-0" href="#"
+          ><img src="/maintaskw6/assets/main-logo-6df2ae34.svg" alt="LOGO"
+        /></a>
+        <form class="mb-display-none" role="search">
+          <div class="position-relative">
+            <input
+              class="form-control ms-8 radius-pill bg-white"
+              type="search"
+              placeholder="搜尋文章"
+              aria-label="Search"
+            />
+            <a
+              href="#"
+              class="position-absolute top-50 start-100 translate-middle"
+            >
+              <!-- 總覺得這個定位還可以再往後推一點 -->
+              <i class="bi bi-search border-0 text-success bg-transparent"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="mb-display-none">
+        <ul class="list-unstyled d-flex align-items-center m-0 mb-display-none">
+          <a href="#" class="text-decoration-none"
+            ><li class="navbar-list mx-1 me-4">所有文章</li></a
+          >
+          <a href="#" class="text-decoration-none"
+            ><li class="navbar-list mx-1 me-4">訂閱方案</li></a
+          >
+          <a href="#" class="text-decoration-none"
+            ><li class="navbar-list mx-1 me-4">關於我們</li></a
+          >
+          <li class="">
+            <button type="button" class="btn btn-success text-white fs-5">
+              登入 / 註冊
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="mb-display"></div>
+      <!-- RWD的漢堡選單還沒做 -->
+    </div>
   </div>
-</nav>
+</header>
     <h1>我是contact</h1>
     <!-- <footer class="footer">我是 footer</footer> -->
 
