@@ -1,0 +1,37 @@
+.header-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @include mobile {
+    max-width: 100%;
+    padding: 20px 12px;
+  }
+}
+
+.radius-pill {
+  border-radius: $border-radius-pill;
+}
+
+.navbar-list {
+  padding: 8px 20px;
+}
+
+.bottom-line {
+  border-bottom: 1px solid $Neutral-300;
+  @include mobile {
+    border-bottom: 0;
+  }
+}
+
+.mb-display-none {
+  @include mobile {
+    display: none;
+  }
+}
+
+.mb-display {
+  display: none;
+  @include mobile {
+    display: block;
+  }
+}

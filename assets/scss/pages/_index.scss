@@ -1,3 +1,37 @@
+/***banner start***/
+.banner {
+  background-image: url(/assets/images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  @include mobile {
+    background-image: url(/assets/images/banner-sm.png);
+  }
+
+  .banner-text {
+    padding: 228px 61px;
+    @include mobile {
+      padding-top: 337px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-bottom: 48px;
+      text-align: center;
+    }
+    h5,
+    .btn-text {
+      font-size: $h5-font-size;
+      @include mobile {
+        font-size: $h6-font-size;
+      }
+    }
+    h1 {
+      @include mobile {
+        font-size: $h5-font-size;
+      }
+    }
+  }
+}
+
 // 熱門主題
 .rounded-custom {
   border-top-left-radius: 15px;
