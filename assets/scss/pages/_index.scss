@@ -88,6 +88,33 @@
   list-style-position: inside;
   border-radius: 12px;
 }
+// 品味生活
+.taste-title {
+  font-size: 52px;
+  color: $primary-400;
+}
+// Vivre 給你意想不到的生活風格提案
+
+.project-btn {
+  padding: 8px 12px;
+  border-radius: 4px; /* 设置按钮的圆角 */
+  background-color: white;
+  border: 1px solid $Accent-100;
+  color: $Accent-300;
+  position: absolute;
+  left: 16px;
+  bottom: 200px;
+}
+.ms-101 {
+  margin-left: 101px;
+}
+
+.ms-118 {
+  margin-left: 118px;
+}
+.ms-48 {
+  margin-left: 48px;
+}
 
 /***全部***/
 
