@@ -52,6 +52,25 @@
   background: $primary-200;
 }
 
+.mb-display-none {
+  @include mobile {
+    display: none;
+  }
+}
+
+.smiley-left {
+  position: absolute;
+  bottom: 0;
+  left: 0; /* 根據需要調整位置 */
+  width: 217px; /* 根據需要調整大小 */
+}
+
+.smiley-right {
+  position: absolute;
+  bottom: 0;
+  left: 1016px; /* 根據需要調整位置 */
+  width: 196px; /* 根據需要調整大小 */
+}
 // 大家都在看
 .everyone-map {
   padding-top: 16px;
