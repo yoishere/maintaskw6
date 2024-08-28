@@ -470,7 +470,7 @@ $spacers: (
   // 2: $spacer * 0.5,
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,,,,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -573,7 +573,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns: 12 !default;
-$grid-gutter-width: 1.25rem !default;
+$grid-gutter-width: 1.5rem !default;
 $grid-row-columns: 6 !default;
 
 // Container padding
