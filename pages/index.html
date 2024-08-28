@@ -27,7 +27,7 @@
         <h2>熱門主題</h2>
         <div class="row">
           <!-- 1 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -47,7 +47,7 @@
             </div>
           </div>
           <!-- 2 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -67,7 +67,7 @@
             </div>
           </div>
           <!-- 3 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -87,7 +87,7 @@
             </div>
           </div>
           <!-- 4 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -107,7 +107,7 @@
             </div>
           </div>
           <!-- 5 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -127,7 +127,7 @@
             </div>
           </div>
           <!-- 6 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -147,7 +147,7 @@
             </div>
           </div>
           <!-- 7 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -167,7 +167,7 @@
             </div>
           </div>
           <!-- 8 -->
-          <div class="col-md-6 col-lg-3 gy-5 position-relative">
+          <div class="col-md-6 col-lg-3 gy-5 position-relative ">
             <picture>
               <source
                 media="(min-width: 992px)"
@@ -191,18 +191,18 @@
       <!-- 精選文章 -->
       <section class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 ps-0">
             <h2>精選文章</h2>
           </div>
           <!-- 右邊區塊 -->
           <div class="col-8">
-            <div class="d-flex">
+            <div class="d-flex justify-content-between">
               <div class="card rounded-0 card-width-bottom me-11">
                 <picture class="mb-5">
                   <source
                     media="(min-width: 992px)"
                     srcset="../assets/images/articles-1.png"
-                    class="$border-radius-sm w-100"
+                    class="rounded-20"
                   />
                   <img
                     src="../assets/images/articles-1-sm.png"
@@ -260,7 +260,7 @@
       </section>
       <!-- 母親節強檔活動 -->
       <section class="bg-primary-200 overflow-hidden">
-        <div class="container py-lg-12 py-10 position-relative">
+        <div class="container position-relative">
           <h4 class="mb-4 text-primary-400 text-center">\ 母親節強檔活動 /</h4>
           <h2 class="mb-4 text-Neutral-500 text-center">
             家庭訂閱方案限時 7 折
@@ -284,15 +284,13 @@
               我想了解
             </button>
           </div>
-          <!-- 左側笑臉玩偶(這串丸子不見了!!!) -->
           <picture>
-            <source
+            <img
               media="(min-width: 992px)"
               srcset="../assets/images/bg-1.png"
               class="smiley-left mb-display-none"
             />
-          </picture>
-          <!-- 右側笑臉玩偶 -縮小之後就不見了-->
+          </img>
           <picture>
             <source
               media="(min-width: 992px)"
@@ -412,16 +410,16 @@
       <!-- 品味生活 -->
       <section class="container">
         <h2 class="mb-9">品味生活</h2>
-        <div class="d-lg-flex">
+        <div class="row">
           <!-- 食 -->
-          <div class="mb-5 mb-lg-0 me-lg-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="taste-title mb-8">食.</div>
             <div>
               <picture class="">
                 <source
                   media="(min-width: 992px)"
                   srcset="../assets/images/life-1.png"
-                  class="$border-radius-sm w-100"
+                  class="rounded-10"
                 />
                 <img
                   src="../assets/images/life-1-sm.png"
@@ -442,7 +440,7 @@
             </div>
           </div>
           <!-- 藝. -->
-          <div class="mb-5 mb-lg-0 me-lg-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="taste-title mb-8">藝.</div>
             <div>
               <picture class="">
@@ -470,7 +468,7 @@
             </div>
           </div>
           <!-- 旅. -->
-          <div class="mb-5 mb-lg-0 me-lg-5">
+          <div class="col-lg-4 mb-5 mb-lg-0">
             <div class="taste-title mb-8">旅.</div>
             <div>
               <picture class="">
@@ -543,6 +541,7 @@
                     class="position-absolute bottom-0 start-0 text-white m-2 text-decoration-none d-flex align-items-center"
                     >親子露營要帶什麼？<i class="bi bi-arrow-right ms-101"></i
                   ></a>
+                  <!-- button跟a 標籤都沒有垂直置中對齊 -->
                 </div>
                 <div class="project-img-set mt-5 mt-lg-9 position-relative">
                   <img
@@ -564,6 +563,7 @@
               </div>
             </div>
             <div class="col-lg-3">
+              <!-- 這邊右邊的gutter空間該如何消除? -->
               <div
                 class="content-box d-flex flex-column justify-content-center align-items-center d-lg-block"
               >
@@ -597,7 +597,6 @@
                   <button class="btn project-btn">
                     <i class="bi bi-play-fill me-1"></i>熱門文章
                   </button>
-                  <!-- 為甚麼內容沒有垂直置中? -->
                   <a
                     href="#"
                     class="position-absolute bottom-0 start-0 text-white m-2 text-decoration-none d-flex align-items-center"
@@ -605,7 +604,6 @@
                       class="bi bi-arrow-right ms-48"
                     ></i
                   ></a>
-                  <!-- 為甚麼內容沒有垂直置中? -->
                 </div>
               </div>
             </div>
@@ -614,9 +612,11 @@
       </section>
       <!-- 想看什麼主題由你決定！ -->
       <section class="container">
-        <div class="d-lg-flex justify-content-between">
-          <h2>想看什麼主題由你決定！</h2>
-          <div></div>
+        <div class="d-lg-flex justify-content-between text-Neutral-500">
+          <h2 class="text-center text-lg-start">想看什麼主題由你決定！</h2>
+          <div class="d-flex flex-column align-items-center align-items-lg-end"><p class="fs-4 mb-8 mb-lg-0">歡迎投稿與我們分享</p><button type="button" class="btn btn-success text-white fs-5">
+            聯絡我們
+          </button></div>
         </div>
       </section>
     </main>
