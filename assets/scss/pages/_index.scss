@@ -103,8 +103,12 @@
   color: $Accent-300;
   position: absolute;
   left: 16px;
-  bottom: 200px;
+  top: -16px;
 }
+mt-65 {
+  margin-top: 65px;
+}
+
 .ms-101 {
   margin-left: 101px;
 }
