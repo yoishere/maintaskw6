@@ -120,6 +120,12 @@ mt-65 {
 .ms-48 {
   margin-left: 48px;
 }
+.btn-text {
+  font-size: 20px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
 
 /***全部***/
 
