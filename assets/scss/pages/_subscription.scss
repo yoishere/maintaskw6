@@ -14,3 +14,29 @@
     font-size: 14px;
   }
 }
+
+.frequency-pay {
+  margin-bottom: 60px;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+.card-body {
+  @include mobile {
+  }
+}
+.subscription-card {
+  height: 696px;
+  color: $Neutral-400;
+  background-color: white;
+  @include mobile {
+    height: 475px;
+  }
+  .card-body-list {
+    list-style-type: none;
+    margin-top: 416px;
+    @include mobile {
+      margin-top: 351px;
+    }
+  }
+}
