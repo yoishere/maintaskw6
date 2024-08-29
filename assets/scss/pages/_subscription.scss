@@ -41,6 +41,27 @@
     }
   }
 }
+
+.subscription-card-extra {
+  height: 696px;
+  color: $Neutral-400;
+  background-color: white;
+  @include mobile {
+    height: 611px;
+  }
+  .card-body-list {
+    list-style-type: none;
+    margin-top: 60px;
+    letter-spacing: 0.1em;
+    font-size: 20px;
+    padding-left: 0;
+    @include mobile {
+      margin-top: 36px;
+      font-size: 16px;
+    }
+  }
+}
+
 .letter-spacing-01em {
   letter-spacing: 0.1em;
 }
