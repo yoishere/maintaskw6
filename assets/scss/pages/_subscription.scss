@@ -26,6 +26,8 @@
   height: 696px;
   color: $Neutral-400;
   background-color: white;
+  border: 1px solid $primary-300;
+  border-radius: 12px;
   @include mobile {
     height: 475px;
   }
@@ -35,6 +37,7 @@
     letter-spacing: 0.1em;
     font-size: 20px;
     padding-left: 0;
+    line-height: 1.2em;
     @include mobile {
       margin-top: 36px;
       font-size: 16px;
@@ -46,6 +49,8 @@
   height: 696px;
   color: $Neutral-400;
   background-color: white;
+  border: 2px solid $Accent-200;
+  border-radius: 12px;
   @include mobile {
     height: 611px;
   }
@@ -55,6 +60,8 @@
     letter-spacing: 0.1em;
     font-size: 20px;
     padding-left: 0;
+    line-height: 1.2em;
+    margin-bottom: 0;
     @include mobile {
       margin-top: 36px;
       font-size: 16px;
@@ -70,7 +77,11 @@
   font-size: 22px;
   color: $Neutral-300;
   text-decoration: line-through;
+  line-height: 24px;
   @include mobile {
     font-size: 20px;
   }
+}
+.mt-60 {
+  margin-top: 60px;
 }
