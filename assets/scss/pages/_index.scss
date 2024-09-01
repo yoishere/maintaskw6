@@ -64,6 +64,12 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.swiper-next:hover,
+.swiper-prev:hover {
+  background-color: $Neutral-200;
+  color: #dee2e6;
+}
 // 母親節強檔活動
 .bg-primary-200 {
   background: $primary-200;

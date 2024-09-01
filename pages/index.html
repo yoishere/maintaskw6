@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css">
     <title>MaintaskW6</title>
   </head>
   <body>
@@ -192,77 +193,161 @@
       <!-- 精選文章 -->
       <section class="container">
         <div class="row">
-          <div class="col-4 d-lg-flex flex-column justify-content-between">
+          <div class="col-lg-4 d-lg-flex flex-column justify-content-between">
             <h2>精選文章</h2>
             <div>
               <div class="swiper-pagination-chosen me-73 me-lg-0 mb-lg-7"></div>
               <div class="swiper-pagination d-flex justify-content-between position-relative">
                 <div class="swiper-prev border  border-Neutral-400 py-20 px-3 rounded-5"><i class="bi bi-arrow-left fs-4 text-Neutral-400"></i></div>
-                <div class="swiper-prev border  border-Neutral-400 py-20 px-3 rounded-5"><i class="bi bi-arrow-right fs-4 text-Neutral-400"></i></div>
+                <div class="swiper-next border  border-Neutral-400 py-20 px-3 rounded-5"><i class="bi bi-arrow-right fs-4 text-Neutral-400"></i></div>
               </div>
             </div>
           </div>
           <!-- 右邊區塊 -->
-          <div class="col-8">
-            <div class="d-flex justify-content-between">
-              <div class="card rounded-0 card-width-bottom me-11">
-                <picture class="mb-5">
-                  <source
-                    media="(min-width: 992px)"
-                    srcset="../assets/images/articles-1.png"
-                    class="rounded-20"
-                  />
-                  <img
-                    src="../assets/images/articles-1-sm.png"
-                    alt="articles-1-sm"
-                    class="w-100 $border-radius-sm"
-                  />
-                </picture>
-                <div
-                  class="card-body p-0 d-flex flex-column justify-content-between"
-                >
-                  <div class="">
-                    <h5 class="mb-1">私人島嶼的露營奇遇記</h5>
-                    <fs-6 class="text-Neutral-400"
-                      >遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</fs-6
-                    >
-                  </div>
-                  <div class="mb-5">
-                    <a href="#" class="more">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card rounded-0 card-width-bottom">
-                <picture class="mb-5">
-                  <source
-                    media="(min-width: 992px)"
-                    srcset="../assets/images/articles-2.png"
-                    class="$border-radius-sm w-100"
-                  />
-                  <img
-                    src="../assets/images/articles-2-sm.png"
-                    alt="articles-1-sm"
-                    class="w-100 $border-radius-sm"
-                  />
-                </picture>
-                <div
-                  class="card-body p-0 d-flex flex-column justify-content-between"
-                >
-                  <div class="">
-                    <h5 class="mb-1">窺探米其林三星主廚的絕密手藝</h5>
-                    <fs-6 class="text-Neutral-400"
-                      >在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</fs-6
-                    >
-                  </div>
-                  <div class="mb-5 d-flex justify-content-between">
-                    <div>
+          <div class="col-lg-8">
+            <div class="swiper chosenSwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide card rounded-0 card-width-bottom">
+                  <picture class="mb-5">
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="../assets/images/articles-1.png"
+                      class="rounded-20"
+                    />
+                    <img
+                      src="../assets/images/articles-1-sm.png"
+                      alt="articles-1-sm"
+                      class="w-100 $border-radius-sm"
+                    />
+                  </picture>
+                  <div
+                    class="card-body p-0 d-flex flex-column justify-content-between"
+                  >
+                    <div class="">
+                      <h5 class="mb-1">私人島嶼的露營奇遇記</h5>
+                      <fs-6 class="text-Neutral-400"
+                        >遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</fs-6
+                      >
+                    </div>
+                    <div class="mb-5">
                       <a href="#" class="more">Read More</a>
                     </div>
-                    <button type="button" class="hashtag-btn">會員專屬</button>
                   </div>
                 </div>
-              </div>
+                <div class="swiper-slide card rounded-0 card-width-bottom">
+                  <picture class="mb-5">
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="../assets/images/articles-2.png"
+                      class="$border-radius-sm w-100"
+                    />
+                    <img
+                      src="../assets/images/articles-2-sm.png"
+                      alt="articles-1-sm"
+                      class="w-100 $border-radius-sm"
+                    />
+                  </picture>
+                  <div
+                    class="card-body p-0 d-flex flex-column justify-content-between"
+                  >
+                    <div class="">
+                      <h5 class="mb-1">窺探米其林三星主廚的絕密手藝</h5>
+                      <fs-6 class="text-Neutral-400"
+                        >在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</fs-6
+                      >
+                    </div>
+                    <div class="mb-5 d-flex justify-content-between">
+                      <div>
+                        <a href="#" class="more">Read More</a>
+                      </div>
+                      <button type="button" class="hashtag-btn">會員專屬</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card rounded-0 card-width-bottom">
+                  <picture class="mb-5">
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="../assets/images/articles-1.png"
+                      class="rounded-20"
+                    />
+                    <img
+                      src="../assets/images/articles-1-sm.png"
+                      alt="articles-1-sm"
+                      class="w-100 $border-radius-sm"
+                    />
+                  </picture>
+                  <div
+                    class="card-body p-0 d-flex flex-column justify-content-between"
+                  >
+                    <div class="">
+                      <h5 class="mb-1">私人島嶼的露營奇遇記</h5>
+                      <fs-6 class="text-Neutral-400"
+                        >遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</fs-6
+                      >
+                    </div>
+                    <div class="mb-5">
+                      <a href="#" class="more">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card rounded-0 card-width-bottom">
+                  <picture class="mb-5">
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="../assets/images/articles-1.png"
+                      class="rounded-20"
+                    />
+                    <img
+                      src="../assets/images/articles-1-sm.png"
+                      alt="articles-1-sm"
+                      class="w-100 $border-radius-sm"
+                    />
+                  </picture>
+                  <div
+                    class="card-body p-0 d-flex flex-column justify-content-between"
+                  >
+                    <div class="">
+                      <h5 class="mb-1">私人島嶼的露營奇遇記</h5>
+                      <fs-6 class="text-Neutral-400"
+                        >遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</fs-6
+                      >
+                    </div>
+                    <div class="mb-5">
+                      <a href="#" class="more">Read More</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide card rounded-0 card-width-bottom">
+                  <picture class="mb-5">
+                    <source
+                      media="(min-width: 992px)"
+                      srcset="../assets/images/articles-1.png"
+                      class="rounded-20"
+                    />
+                    <img
+                      src="../assets/images/articles-1-sm.png"
+                      alt="articles-1-sm"
+                      class="w-100 $border-radius-sm"
+                    />
+                  </picture>
+                  <div
+                    class="card-body p-0 d-flex flex-column justify-content-between"
+                  >
+                    <div class="">
+                      <h5 class="mb-1">私人島嶼的露營奇遇記</h5>
+                      <fs-6 class="text-Neutral-400"
+                        >遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</fs-6
+                      >
+                    </div>
+                    <div class="mb-5">
+                      <a href="#" class="more">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>              
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -593,14 +678,12 @@
                   />
                   <button class="btn project-btn">
                     <i class="bi bi-play-fill me-1"></i>編輯推薦
-                  </button>
-                  <!-- 為甚麼內容沒有垂直置中? -->
+                  </button>                  
                   <a
                     href="#"
                     class="position-absolute bottom-0 start-0 text-white m-2 text-decoration-none d-flex align-items-center"
                     >山女孩的健行筆記<i class="bi bi-arrow-right ms-118"></i
-                  ></a>
-                  <!-- 為甚麼內容沒有垂直置中? -->
+                  ></a>                  
                 </div>
                 <div
                   class="project-img-set mt-5 mt-lg-0 mb-lg-13 position-relative"
