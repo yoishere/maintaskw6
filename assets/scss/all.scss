@@ -1,5 +1,5 @@
 // main.scss 統一管理 scss 檔
-
+@import "./base/fontStyle.scss";
 @import "../../node_modules/bootstrap/scss/functions";
 
 // 為了避免bootstrap吃不到，所以要放在前面
@@ -27,7 +27,6 @@ $utilities: map-merge(
 
 // base
 @import "./base/base.scss";
-@import "./base/fontStyle.scss";
 
 // layout- 每一頁都需使用到的大型元件ex:header、footer、sidebar
 @import "./layout/container.scss";
