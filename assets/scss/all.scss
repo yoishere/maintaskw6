@@ -1,8 +1,9 @@
 // main.scss 統一管理 scss 檔
-@import "./base/fontStyle.scss";
+
 @import "../../node_modules/bootstrap/scss/functions";
 
 // 為了避免bootstrap吃不到，所以要放在前面
+@import "./base/fontStyle.scss";
 @import "./utils/variables.scss";
 
 // 第三方套件(bootstrap)
