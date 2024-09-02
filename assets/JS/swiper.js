@@ -1,59 +1,44 @@
-// 然後繼續初始化 Swiper
+// core version + navigation, pagination modules:
 import Swiper from "swiper";
+import { Navigation, Pagination } from "../../node_modules/swiper/modules";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
-function initSwiper() {
-  // 銷毀現有的 Swiper 實例（如果存在）
-  if (window.currentSwiper) {
-    window.currentSwiper.destroy(true, true);
-  }
+// init Swiper:
+const swiper1 = new Swiper(".chosenSwiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  modules: [Navigation, Pagination],
 
-  var swiper;
-  if (window.innerWidth >= 992) {
-    //電腦版的Swiper
-    swiper = new Swiper(".chosenSwiper", {
+  // If we need pagination(數字分頁)
+  pagination: {
+    el: ".swiper-pagination-chosen",
+    type: "fraction",
+  },
+
+  // Navigation arrows(左右箭頭)
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 640px
+    992: {
       slidesPerView: 2,
-      // ***(一次呈現幾張),
-      slidesPerGroup: 2,
-      // ***(一個群組內有幾張投影片),
       spaceBetween: 48,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
-      // ***(分頁),
-      pagination: {
-        el: ".swiper-pagination-chosen",
-        type: "fraction",
-      },
-    });
-  } else {
-    //手機版的Swiper
-    swiper = new Swiper(".chosenSwiper", {
-      slidesPerView: 1,
-      // ***(一次呈現幾張),
-      slidesPerGroup: 1,
-      // ***(一個群組內有幾張投影片),
-      spaceBetween: 0,
-      navigation: {
-        nextEl: ".swiper-next",
-        prevEl: ".swiper-prev",
-      },
-      // ***(分頁),
-      pagination: {
-        el: ".swiper-pagination-chosen",
-        type: "fraction",
-      },
-    });
-  }
-
-  // 將 swiper 實例保存到全域變數中，以便在下次銷毀
-  window.currentSwiper = swiper;
-}
-
-// 初始化 Swiper
-initSwiper();
-
-// 當視窗大小改變時，重新初始化 Swiper
-window.addEventListener("resize", function () {
-  initSwiper();
+    },
+  },
 });
