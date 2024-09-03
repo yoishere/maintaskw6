@@ -42,3 +42,34 @@ const swiper1 = new Swiper(".chosenSwiper", {
     },
   },
 });
+
+if (window.innerWidth >= 992) {
+  // init Swiper:
+  const swiper1 = new Swiper(".tasteSwiper", {
+    // Optional parameters
+    direction: "horizontal",
+    loop: true,
+    modules: [Navigation, Pagination],
+
+    // If we need pagination(數字分頁)
+    // pagination: {
+    //   el: ".swiper-pagination-taste",
+    //   type: "fraction",
+    // },
+
+    // Navigation arrows(左右箭頭)
+    navigation: {
+      nextEl: ".swiper-next",
+      prevEl: ".swiper-prev",
+    },
+
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    // },
+
+    // Default parameters
+    slidesPerView: 3,
+    spaceBetween: 24,
+  });
+}
