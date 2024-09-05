@@ -113,8 +113,21 @@
 }
 // 品味生活
 .taste-title {
-  font-size: 52px;
   color: $primary-400;
+  @mixin desktop {
+    font-size: 52px;
+  }
+}
+.taste-list {
+  font-size: $h6-font-size;
+  @mixin desktop {
+    font-size: $h5-font-size;
+  }
+}
+.mobile-none {
+  @include mobile {
+    display: none;
+  }
 }
 // Vivre 給你意想不到的生活風格提案
 
@@ -162,6 +175,9 @@ mt-65 {
   font-size: 20px;
   text-decoration: none;
   color: $success;
+  @include mobile {
+    font-size: 16px;
+  }
 }
 .banner {
   height: calc(100vh - 80px);
