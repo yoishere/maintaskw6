@@ -6,64 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css"> -->
     <title>MaintaskW6</title>
-    <script type="module" crossorigin src="/maintaskw6/assets/main-bba132d5.js"></script>
-    <link rel="stylesheet" href="/maintaskw6/assets/main-8693ca91.css">
+    <script type="module" crossorigin src="/maintaskw6/assets/main-764a286f.js"></script>
+    <link rel="stylesheet" href="/maintaskw6/assets/main-216b30ca.css">
   </head>
   <body>
-    <!-- 要記得把這邊的header進行fixed -->
-<header class="bg-body">
-  <div class="header-container">
-    <div class="d-flex justify-content-between py-8 bottom-line">
-      <div class="d-flex align-items-center">
+    <header class="bg-body">
+  <div class="header-container py-0">
+    <nav class="navbar navbar-expand-lg py-lg-8 bottom-line">
+      <div class="container-fluid">
+        <!-- LOGO -->
         <a class="navbar-brand m-0 p-0" href="index.html"
           ><img src="/maintaskw6/assets/main-logo-6df2ae34.svg" alt="LOGO"
         /></a>
-        <form class="mb-display-none" role="search">
-          <div class="position-relative">
-            <input
-              class="form-control ms-8 radius-pill bg-white"
-              type="search"
-              placeholder="搜尋文章"
-              aria-label="Search"
-            />
-            <a
-              href="#"
-              class="position-absolute top-50 start-100 translate-middle"
-            >
-              <!-- 總覺得這個定位還可以再往後推一點 -->
-              <i class="bi bi-search border-0 text-success bg-transparent"></i>
-            </a>
+        <!-- 漢堡選單的ICON -->
+        <button
+          class="navbar-toggler border-0 p-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+            style="width: 24px; height: 24px"
+          ></span>
+        </button>
+        <!-- 漢堡選單內容 -->
+        <div
+          class="offcanvas offcanvas-end w-100 bg-primary-100"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
           </div>
-        </form>
+          <div class="offcanvas-body d-lg-flex justify-content-between">
+            <!-- 搜尋group -->
+            <form class="" role="search">
+              <div class="position-relative">
+                <input
+                  class="form-control ms-lg-8 radius-pill bg-white border border-gray-200"
+                  type="search"
+                  placeholder="搜尋文章"
+                  aria-label="Search"
+                />
+                <a
+                  href="#"
+                  class="position-absolute top-50 end-0 translate-middle"
+                >
+                  <!-- 總覺得這個定位還可以再往後推一點 -->
+                  <i
+                    class="bi bi-search border-0 text-success bg-transparent"
+                  ></i>
+                </a>
+              </div>
+            </form>
+            <!-- 所有選單~登入 -->
+            <ul
+              class="navbar-nav list-unstyled d-lg-flex align-items-lg-center m-0"
+            >
+              <a href="#" class="text-decoration-none"
+                ><li class="navbar-list mx-lg-1 me-lg-4 my-5 my-lg-0">
+                  所有文章
+                </li></a
+              >
+              <a
+                href="subscription.html"
+                class="active text-decoration-none"
+                aria-current="page"
+                ><li class="navbar-list mx-lg-1 me-lg-4 mb-5 mb-lg-0">
+                  訂閱方案
+                </li></a
+              >
+              <a href="#" class="text-decoration-none"
+                ><li class="navbar-list mx-lg-1 me-lg-4 mb-5 mb-lg-0">
+                  關於我們
+                </li></a
+              >
+              <li class="">
+                <button
+                  type="button"
+                  class="btn btn-success text-white fs-6 w-100 w-lg-auto"
+                >
+                  登入 / 註冊
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="mb-display-none">
-        <ul class="list-unstyled d-flex align-items-center m-0 mb-display-none">
-          <a href="#" class="text-decoration-none"
-            ><li class="navbar-list mx-1 me-4">所有文章</li></a
-          >
-          <a href="subscription.html" class="text-decoration-none"
-            ><li class="navbar-list mx-1 me-4">訂閱方案</li></a
-          >
-          <a href="#" class="text-decoration-none"
-            ><li class="navbar-list mx-1 me-4">關於我們</li></a
-          >
-          <li class="">
-            <button type="button" class="btn btn-success text-white fs-6">
-              登入 / 註冊
-            </button>
-          </li>
-        </ul>
-      </div>
-      <div class="mb-display"></div>
-      <!-- RWD的漢堡選單還沒做 -->
-    </div>
+    </nav>
   </div>
 </header>
 
     <main>
       <!-- banner -->
-      <section class="banner">
-        <div class="container">
+      <section class="banner my-lg-13">
+        <div class="container ">
           <div class="banner-text">
             <h5 class="text-white mb-2">獻給新世代的生活風格誌</h5>
             <h1 class="text-white mb-5">一起探索生活的無限可能</h1>
